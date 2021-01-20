@@ -1,0 +1,305 @@
+* {
+    font-family: 'Open Sans';
+    box-sizing: border-box;
+}
+
+/* ----- HEADER STYLES ----- */
+header {
+    top: 0px;
+    margin: 0px;
+    padding: 25px;
+    background:linear-gradient(0deg, rgba(44, 45, 73, 0.8),rgba(49, 50, 78, 0.8)), url(assets/imgs/banner.png);
+    position: relative;
+}
+
+.header-content hr{
+    margin: 0px 45px;
+    border: solid 1px #FFF;
+}
+
+.header-content .nav{
+    margin: 25px 45px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.links a{
+    margin: 0px 9px;
+    font-size: 15px;
+    color: #FFF;
+    text-decoration: none;
+}
+
+.links a:hover{
+    color: rgb(194, 194, 194);
+    border-bottom: solid 2px tomato;
+}
+
+.header-content .header-description {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #FFF;
+}
+
+.header-description h1{
+    font-size: 50px;
+    font-weight: 600;  
+}
+
+.header-description button {
+    font-size: 13px;
+    margin-top: 45px;
+    background-color: tomato;
+    color: #FFF;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 4px;
+    margin-bottom: 50px;
+}
+
+.header-description button:hover {
+    background-color: rgb(180, 29, 3);
+    color: rgb(194, 194, 194);
+}
+
+@media(max-width: 900px){
+    .header-content .nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .nav .links {
+        text-align: center;
+    }
+}
+
+
+/* ----- SECTION FUNCIONALIDADES STYLES ----- */
+.funcionalidades {
+    margin: 0;
+    padding: 0;
+    background-color: #FFF;
+    position: relative;
+}
+
+.funcionalidades .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 80px;
+}
+
+.cards .card {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    height: 250px;
+    margin: 20px;
+    text-align: center;
+}
+
+.card img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 5px;
+}
+
+.card h5 {
+    margin: 20px 0px;
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.card p{
+    font-weight: 300;
+}
+
+/* ----- SECTION IMAGENS STYLES ----- */
+.imgs {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.imgs img {
+    margin: 0;
+    padding: 0;
+}
+
+/* ----- SECTION TIME STYLES ----- */
+.time {
+    margin-top: 80px;
+    position: relative;
+}
+.cards-time{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cards-time .card-time {
+    width:250px;
+    margin: 20px;
+}
+
+.card-time img {
+    width: 250px;
+    margin-bottom: 20px;
+}
+
+.card-time h4 {
+    font-size: 19px;
+    font-weight: 600;
+}
+
+.card-time h5 {
+    color: red;
+    font-size: 13px;
+    margin-bottom: 25px;
+}
+
+.card-time .icons {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+}
+
+.icons i{
+    text-align: center;
+    width: 35px;
+    padding: 5px;
+    border: solid 1px grey;
+}
+
+/* ----- SECTION DEPOIMENTOS STYLES ----- */
+
+.depoimentos{
+    position: relative;
+    margin-top: 80px;
+    display: flex;
+}
+
+.depoimentos img {
+    width: 50%;
+}
+
+.depoimentos .slides{
+    width: 50%;
+    background-color: rgb(81, 50, 71);
+}
+
+.carousel-caption div{
+    float: left;
+    color: red;
+    /* margin-bottom: 50px; */
+    text-align: start;
+}
+
+.carousel-caption div p{
+    font-family: 'Dancing Script', cursive;
+    font-size: 30px;
+    color: #FFF;
+}
+
+.carousel-caption div h5{
+    font-size: 15px;
+    color: #FFF;
+}
+
+
+/* ----- SECTION CALL-TO-ACTION STYLES ----- */
+.cta {
+    margin-top: 80px;
+    position: relative;
+    text-align: center;
+}
+
+.cta h5 {
+    font-size: 23px;
+    font-weight: 500;
+}
+
+.cta p {
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.cta button {
+    font-size: 13px;
+    margin-top: 15px;
+    background-color: tomato;
+    color: #FFF;
+    padding: 10px 60px;
+    border: none;
+    border-radius: 4px;
+}
+
+.cta button:hover {
+    background-color: rgb(180, 29, 3);
+    color: rgb(194, 194, 194);
+}
+
+/* ----- SECTION FOOTER STYLES ----- */
+footer {
+    margin-top: 80px;
+    position: relative;
+}
+.parte-cima {
+    padding: 50px 0px;
+    background-color: #3a3e63;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.parte-cima div {
+    width: 400px;
+    text-align: center;
+}
+
+.parte-cima h5 {
+    color: #FFF;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.parte-cima p {
+    color: rgb(160, 159, 159);
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.parte-cima i {
+    margin: 7px;
+    font-size: 25px;
+    color: #FFF;
+    width: 38px;
+    padding: 5px;
+    border: solid 2px #FFF;
+}
+
+.parte-baixo {
+    padding: 20px 0px;
+    background-color: #313455;
+    text-align: center;
+    color: grey;
+    font-weight: 500px;
+}
+
+.parte-baixo span {
+    color: #FFF;
+    font-weight: 700;
+}
+
+
+
+
